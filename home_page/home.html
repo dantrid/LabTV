@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTV Home</title>
+    <link rel="stylesheet" href="style/home.css">
+    <script src="script/home-slider.js" defer></script>
+    <script src="script/home-filtraggi.js" defer></script>
+    <script src="script/home-gestione-popup.js" defer></script>
+    <script src="script/home-slider-specifici.js" defer></script>
+    <script src="script/home-header-btns.js" defer></script>
+</head>
+<body>
+    <header id="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="../search_page/search.html">Cerca</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Profilo</a></li>
+        </ul>
+    </header>
+
+    <div class="grid-container">
+        <section class="a">
+            <div id="logo">
+                <img src="images/logo_2.png" alt="Logo LabTV">
+            </div>
+            <div class="btns-filtra">
+                <button class="div-pages">Home</button>
+                <button class="div-pages">Cerca</button>
+                <button class="div-pages">Download</button>
+                <button class="div-pages">Profilo</button>
+                <button class="filtra"><a href="#anime">Anime</a></button>
+                <button class="filtra"><a href="#lotr">Fantasy</a></button>
+                <button class="filtra"><a href="#film">Film</a></button>
+                <button class="filtra"><a href="#serie">Serie TV</a></button>
+            </div>
+        </section>
+
+        <section class="b">
+            <h1>TITOLI DI PUNTA</h1>
+            <div class="container-titoli">
+                <img src="images/locandine/locandine_grandi/dark.png" alt="" class="visibile">
+                <img src="images/locandine/locandine_grandi/truman.webp" alt="" class="prossima">
+                <img src="images/locandine/locandine_grandi/lotr.jpg" alt="">
+                <img src="images/locandine/locandine_grandi/one_piece.jpg" alt="">
+                <img src="images/locandine/locandine_grandi/the_office.jpg" alt="">
+            </div>
+             <div class="buttons2">
+                <button class="torna"></button>
+                <button class="torna"></button>
+                <button class="torna"></button>
+                <button class="torna"></button>
+                <button class="torna"></button>
+            </div>
+        </section>
+
+        <section class="c" id="anime">
+
+            <h2><a href="#">TITOLI ANIME</a></h2>
+            
+            <div class="titoli-anime">
+                
+                <div class="anime-visibile">
+                    <picture>
+                        <source srcset="images/locandine-grandi/anime/one-piece.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-anime" src="images/locandine/anime/one_piece.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-anime">
+                        <h3>One Piece</h3>
+                        <p>Monkey D. Rufy, parte per un viaggio avventuroso con la sua ciurma per trovare il leggendario tesoro One Piece e diventare il Re dei Pirati.</p>
+                    </div>
+                </div>
+                <div class="anime-visibile2">
+                    <picture>
+                        <source srcset="images/locandine-grandi/anime/bleach.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-anime" src="images/locandine/anime/bleach.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-anime">
+                        <h3>Bleach</h3>
+                        <p>Ichigo Kurosaki ottiene i poteri di uno Shinigami (Dio della Morte) e decide di proteggere il mondo dagli spiriti maligni chiamati Hollow.</p>
+                    </div>
+                </div>
+                <div class="anime-visibile3">
+                    <picture>
+                        <source srcset="images/locandine-grandi/anime/naruto.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-anime" src="images/locandine/anime/naruto.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-anime">
+                        <h3>Naruto</h3>
+                        <p>Naruto Uzumaki, un giovane ninja emarginato, sogna di diventare Hokage e affronta sfide per proteggere il suo villaggio.</p>
+                    </div>
+                </div>
+                <div class="anime-prossimo">
+                    <picture>
+                        <source srcset="images/locandine-grandi/anime/shippuden.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-anime" src="images/locandine/anime/naruto_shippuden.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-anime">
+                        <h3>Naruto Shippuden</h3>
+                        <p>Naruto cresce e affronta nemici sempre più pericolosi mentre cerca di salvare il suo amico Sasuke e portare la pace nel mondo ninja.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/anime/fma.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-anime" src="images/locandine/anime/fma.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-anime">
+                        <h3>Fullmetal Alchemist</h3>
+                        <p>Due fratelli alchimisti, Edward e Alphonse Elric, cercano la Pietra Filosofale per recuperare i loro corpi perduti dopo un esperimento fallito.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/anime/soul-eater.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-anime" src="images/locandine/anime/soul_eater.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-anime">
+                        <h3>Soul Eater</h3>
+                        <p>Studenti della Death Weapon Meister Academy combattono anime malvagie per trasformare le loro armi partner in Death Scythes e proteggere il mondo.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="anime-btn indietro"></button>
+            <button class="anime-btn avanti"></button>
+
+        </section>
+
+        
+
+        <section class="e" id="lotr">
+
+            <h2><a href="#">IL SIGNORE DEGLI ANELLI</a></h2>
+
+            <div class="lotr">
+
+                <div  class="lotr-visibile">
+                    <picture>
+                        <source srcset="images/locandine-grandi/lotr/lotr1.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-lotr" src="images/locandine/film/lotr/lotr_fellowship.webp" alt="">
+                    </picture>
+                    <div class="overlay over-lotr">
+                        <h3>Il Signore degli Anelli - La Compagnia dell'Anello</h3>
+                        <p>Frodo e la Compagnia dell’Anello intraprendono un pericoloso viaggio per distruggere l’Unico Anello e fermare Sauron.</p>
+                    </div>
+                </div>
+                <div class="lotr-visibile2">
+                    <picture>
+                        <source srcset="images/locandine-grandi/lotr/lotr2.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-lotr"  src="images/locandine/film/lotr/lotr_two_tower.webp" alt="">
+                    </picture>
+                    <div class="overlay over-lotr">
+                        <h3>Il Signore degli Anelli - Le Due Torri</h3>
+                        <p>Frodo e Sam proseguono verso Mordor con l’Anello, mentre gli altri membri della Compagnia combattono le forze di Sauron e Saruman.</p>
+                    </div>
+                </div>
+                <div class="lotr-visibile3">
+                    <picture>
+                        <source srcset="images/locandine-grandi/lotr/lotr3.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-lotr"  src="images/locandine/film/lotr/lotr_rotk.webp" alt="">
+                    </picture>
+                    <div class="overlay over-lotr">
+                        <h3>Il Signore degli Anelli - Il Ritorno del Re</h3>
+                        <p>Frodo e Sam completano il loro viaggio per distruggere l’Unico Anello, mentre la Terra di Mezzo si prepara alla battaglia finale contro Sauron.</p>
+                    </div>
+                </div>
+                <div class="lotr-prossimo">
+                    <picture>
+                        <source srcset="images/locandine-grandi/lotr/hobbit1.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-lotr"  src="images/locandine/film/lo_hobbit/lo_hobbit_1.webp" alt="">
+                    </picture>
+                    <div class="overlay over-lotr">
+                        <h3>Lo Hobbit - Un Viaggio Inaspettato</h3>
+                        <p>Bilbo Baggins, un hobbit tranquillo, viene coinvolto in un’avventura inaspettata con un gruppo di nani per riconquistare un tesoro custodito dal drago Smaug.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/lotr/hobbit2.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-lotr"  src="images/locandine/film/lo_hobbit/lo_hobbit_2.webp" alt="">
+                    </picture>
+                    <div class="overlay over-lotr">
+                        <h3>Lo Hobbit - La Desolazione di Smaug</h3>
+                        <p>Bilbo e i nani continuano il viaggio verso la Montagna Solitaria, affrontando pericoli e incontrando il drago Smaug, custode del tesoro.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/lotr/hobbit3.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-lotr"  src="images/locandine/film/lo_hobbit/lo_hobbit_3.webp" alt="">
+                    </picture>
+                    <div class="overlay over-lotr">
+                        <h3>Lo Hobbit - La Battaglia delle Cinque Armate</h3>
+                        <p>Dopo la morte di Smaug, Bilbo e i nani si trovano coinvolti nella grande Battaglia delle Cinque Armate, dove uomini, nani, elfi e orchi si scontrano per il controllo del tesoro e della Montagna Solitaria.</p>
+                    </div>
+                </div>
+
+            </div>
+
+                <button class="lord-btn indietro"></button>
+                <button class="lord-btn avanti"></button>
+
+        </section>
+
+        <section class="f" id="film">
+
+            <h2><a href="#">FILM D'AUTORE</a></h2>
+
+            <div class="film-autore">
+                
+                <div class="film-visibile">
+                    <picture>
+                        <source srcset="images/locandine-grandi/film/clockwork.jpeg" type="image/jpeg" media="(min-width: 855px)">
+                        <img class="img-film" src="images/locandine/film/arancia_meccanica.webp" alt="">
+                    </picture>
+                    <div class="overlay over-film">
+                        <h3>Arancia Meccanica</h3>
+                        <p>Alex, un giovane violento in una società distopica, viene sottoposto a un controverso trattamento per controllare il suo comportamento criminale.</p>
+                    </div>
+                </div>
+                <div class="film-visibile2">
+                    <picture>
+                        <source srcset="images/locandine-grandi/film/iene.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-film" src="images/locandine/film/le_iene.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-film">
+                        <h3>Le Iene</h3>
+                        <p>Un gruppo di criminali pianifica un colpo, ma la tensione e i tradimenti tra di loro portano a un esito violento e imprevedibile.</p>
+                    </div>
+                </div>
+                <div class="film-visibile3">
+                    <picture>
+                        <source srcset="images/locandine-grandi/film/tnbc.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-film" src="images/locandine/film/tnbc.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-film">
+                        <h3>The Nightmare Before Christmas</h3>
+                        <p>Jack Skeletron, stanco della solita vita ad Halloween, scopre il Natale e cerca di portarne lo spirito a Halloween Town, con risultati caotici e divertenti.</p>
+                    </div>
+                </div>
+                <div class="film-prossimo">
+                    <picture>
+                        <source srcset="images/locandine-grandi/film/pulp-fiction.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-film" src="images/locandine/film/pulp_fiction.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-film">
+                        <h3>Pulp Fiction</h3>
+                        <p>Due criminali, un pugile e altri personaggi interconnessi vivono storie di crimine, violenza e redenzione a Los Angeles, narrate in ordine non lineare.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/film/shining.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-film" src="images/locandine/film/shining.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-film">
+                        <h3>Shining</h3>
+                        <p>Jack Torrance accetta di fare da custode invernale a un hotel isolato, dove lui e la sua famiglia vengono sopraffatti da forze sovrannaturali e dalla follia.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/film/truman.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-film" src="images/locandine/film/the_truman-show.webp" alt="">
+                    </picture>
+                    <div class="overlay over-film">
+                        <h3>The Truman Show</h3>
+                        <p>Truman Burbank scopre che tutta la sua vita è uno show televisivo e cerca di liberarsi dal mondo finto che lo circonda.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="film-btn indietro"></button>
+            <button class="film-btn avanti"></button>
+
+        </section>
+
+        <section class="g" id="serie">
+            
+            <h2><a href="#">SERIE TV</a></h2>
+            
+            <div class="serie-tv">
+                
+                <div class="serie-visibile">
+                    <picture>
+                        <source srcset="images/locandine-grandi/serie/breaking-bad.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-serie" src="images/locandine/serie/breaking-bad.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-serie">
+                        <h3>Breaking Bad</h3>
+                        <p>Walter White, un insegnante di chimica malato di cancro, si trasforma in un produttore di metanfetamine per garantire il futuro della sua famiglia, scatenando violenza e crimine.</p>
+                    </div>
+                </div>
+                <div class="serie-visibile2">
+                    <picture>
+                        <source srcset="images/locandine-grandi/serie/saul.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-serie" src="images/locandine/serie/better_call_saul.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-serie">
+                        <h3>Better Call Saul</h3>
+                        <p>Jimmy McGill, un avvocato di talento ma moralmente ambiguo, si trasforma nel truffatore legale Saul Goodman mentre lotta per affermarsi nel mondo del crimine.</p>
+                    </div>
+                </div>
+                <div class="serie-visibile3">
+                    <picture>
+                        <source srcset="images/locandine-grandi/serie/dark.png" type="image/png" media="(min-width: 855px)">
+                        <img class="img-serie" src="images/locandine/serie/dark.jpg" alt="">
+                    </picture>
+                    <div class="overlay over-serie">
+                        <h3>Dark</h3>
+                        <p>In una piccola città tedesca, la scomparsa di alcuni ragazzi svela misteriosi legami tra quattro famiglie e un ciclo temporale che si ripete ogni generazione.</p>
+                    </div>                    
+                </div>
+                <div class="serie-prossimo">
+                    <picture>
+                        <source srcset="images/locandine-grandi/serie/himym.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-serie" src="images/locandine/serie/himym.webp" alt="">
+                    </picture>
+                    <div class="overlay over-serie">
+                        <h3>How I Met Your Mother</h3>
+                        <p>Ted Mosby racconta ai figli la storia di come ha incontrato la loro madre, tra amicizie, amori e divertenti avventure a New York.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/serie/malcolm.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-serie" src="images/locandine/serie/malcolm.webp" alt="">
+                    </picture>
+                    <div class="overlay over-serie">
+                        <h3>Malcolm in the Middle</h3>
+                        <p>Malcolm, un ragazzo prodigio, cresce in una famiglia caotica e stravagante, affrontando le sfide della vita quotidiana con ironia e intelligenza.</p>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="images/locandine-grandi/serie/the-office.jpg" type="image/jpg" media="(min-width: 855px)">
+                        <img class="img-serie" src="images/locandine/serie/the_office.webp" alt="">
+                    </picture>
+                    <div class="overlay over-serie">
+                        <h3>The Office</h3>
+                        <p>La vita quotidiana dei dipendenti di un ufficio viene raccontata in chiave comica, mostrando le assurdità del lavoro d’ufficio e le dinamiche tra colleghi.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="serie-btn indietro"></button>
+            <button class="serie-btn avanti"></button>
+
+        </section>
+    </div>
+
+    <footer>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="../contact_page/contatti.html">Contatti</a></li>
+                <li><a href="#">Riconoscimenti</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Impostazioni</a></li>
+                <li><a href="#">Gestisci abbonamento</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Note legali</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </footer>
+
+        <div class="popup-overlay">
+            <div class="popup-container">
+                <div class="close"></div>
+                <div class="popup">
+                    <video></video>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-profilo">
+            <div class="profilo">
+                <button class="chiudi-profilo"></button>
+                <h3>PROFILO</h3>
+                <div class="btns-profilo">
+                    <button>Aiuto</button>
+                    <button>Account e impostazioni</button>
+                    <button>Modifica Profilo</button>
+                    <button>Maggiori informazioni</button>
+                    <button>Esci</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-container">    
+            <div class="contattaci">
+                <h4>CONTATTACI</h4>
+
+                <div id="chiusura-contattaci"></div>
+
+                <form action="../home_page/home.html" method="post" class="contattaci">
+
+                    <input type="text" id="nome" placeholder="Nome">
+
+                    <input type="text" id="cognome" placeholder="Cognome">
+
+                    <input type="email" id="mail" placeholder="E-mail">
+
+                    <input type="tel" id="telefono" placeholder="Telefono">
+
+                    <textarea name="box-testo" id="text-area" placeholder="Ciao! Come possiamo aiutarti?"></textarea>
+
+                    <button type="submit">Invia</button>
+
+                </form>
+
+                <div class="accordance">
+
+                        <input type="checkbox" id="termini-condizioni">
+                        <label for="termini-condizioni">Per continuare accetta i nostri <a href="#">termini e condizioni</a></label>
+                        <span></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ricerca-overlay">
+            <div class="overlay"></div>
+            <div class="ricerca-container">    
+                <div class="ricerca-input">
+                    <input type="text" placeholder="CERCA">
+                    <button class="cancel">Cancella</button>
+                    <button class="close-search">Chiudi</button>
+                </div>
+                <div class="ricerca-content">
+
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
