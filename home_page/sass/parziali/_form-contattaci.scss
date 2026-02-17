@@ -1,0 +1,101 @@
+//SCSS per la gestione del form di contatto
+
+.form-container{
+    display: none;
+    position: fixed;
+    margin-top: 50px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .contattaci {
+        position: relative;
+        border: solid black 1px;
+        background-color: cadetblue;
+        border-radius: 10px;
+        width: 50%;
+        height: fit-content;
+        margin: 20px auto;
+        padding: 10px;
+        #chiusura-contattaci{
+            width: 25px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            aspect-ratio: 1/1;
+            border: black 1px solid;
+            border-radius: 50px;
+            background-color: white;
+            cursor: pointer;
+            &::before {
+                    content: '✘';
+                    display: flex;
+                    justify-content: center;
+                }   
+        }
+        h4 {
+            margin: 20px auto;
+            text-align: center;
+            font-size: 2em;
+        }
+        form {
+            background-color: #89CFF0;
+            border-radius: 10px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+            @mixin dimensioni-standard {
+                width: 70%;
+                margin: 10px auto;
+                border: solid black 1px;
+                border-radius: 5px
+            }
+
+            input {
+                @include dimensioni-standard;
+                height: 35px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+
+            #text-area {
+                @include dimensioni-standard;
+                min-height: 150px;
+                font-size: 0.86em;
+                resize: none;
+                padding: 10px;
+            }
+
+            button {
+                width: 70%;
+                height: 40px;
+                margin: 0 auto;
+                border-radius: 10px;
+                border: solid 1px black;
+            }
+
+        }
+
+        .accordance {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            label {
+                max-width: 90%;
+            }
+            span {
+                margin: 10px auto;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//Creo una classe per gestire il codice per l'errore il JavaScript
+.errore::placeholder {
+    color: red;
+}

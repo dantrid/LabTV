@@ -1,0 +1,87 @@
+//SCSS per la gestione del footer
+
+footer {
+    border: black solid 1px;
+    background-color: #818589;
+    min-height: 150px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 80px;
+
+    @mixin list-style ($width) {
+        list-style: none;
+        width: $width;
+        margin: 10px auto;
+    }
+
+    @mixin sprite-style {
+        width: 43px;
+        height: 43px;
+        background-image: url("../images/icone/collection32px/sprite32px.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    ul:first-child {
+        @include list-style (30%);
+        li {
+            margin: 3px;
+            text-align: center;
+        }
+    }
+
+    ul:nth-child(2) {
+        @include list-style (30%);
+        li {
+            margin: 3px;
+            text-align: center;
+        }
+    }
+
+    ul:nth-child(3) {
+        @include list-style (30%);
+        li {
+            margin: 3px;
+            text-align: center;
+        }
+    }
+
+    ul:last-child {
+        display: flex;
+        justify-content: space-around;
+        @include list-style (100%);
+        li:nth-child(1) {
+            @include sprite-style;
+            background-position: 0 0;
+            &:hover {
+                background-position: 0 -45px;
+            }
+        }
+
+        li:nth-child(2) {
+            @include sprite-style;
+            background-position: 0 -88px;
+            &:hover {
+                background-position: 0 -133px;
+            }
+        }
+        
+        li:nth-child(3) {
+            @include sprite-style;
+            background-position: 0 -177px;
+            &:hover {
+                background-position: 0 -222px;
+            }
+        }
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        font-size: 0.90em;
+    }
+}

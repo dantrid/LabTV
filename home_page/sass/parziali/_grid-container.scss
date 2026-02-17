@@ -1,0 +1,43 @@
+//SCSS per la gestione del grid-container
+
+.grid-container {
+    display: grid;
+
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g";
+}
+
+.avanti, .indietro {
+    position: absolute;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    z-index: 500;
+}
+
+.indietro {
+    left: 2%;
+    top: 45%;
+    border: solid black 1px;
+    cursor: pointer;
+    &::before {
+        content: '◄';
+    }
+}
+
+.avanti {
+    right: 2%;
+    top: 45%;
+    border: solid black 1px;
+    cursor: pointer;
+    &::after {
+        content: '►';
+    }
+}

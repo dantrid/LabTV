@@ -1,0 +1,45 @@
+.a {
+    grid-area: a;
+    background-color: lightblue;
+    border: black solid 1px;
+    display: flex;
+    height: 60px;
+    #logo {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        img {
+            height: 100%;
+            width: 80%;
+            object-fit: cover;
+            object-position: 60% center;
+            transform: translateY(6%);
+        }
+    }
+    .btns-filtra {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        .filtra {
+            margin: 5px 7px;
+            border-radius: 50px;
+            padding: 3px;
+            width: 20%;
+            font-size: 0.8em;
+            cursor: pointer;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .div-pages {
+            display: none;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
